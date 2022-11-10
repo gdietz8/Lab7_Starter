@@ -53,7 +53,8 @@ function initializeServiceWorker() {
   //            "Using Service Workers" will help you here)
         try {
           let registration = await navigator.serviceWorker.register("./Lab7_Starter/sw.js", {
-            scope: "/",});
+            scope: "/",
+            });
   // B4. TODO - Once the service worker has been successfully registered, console
   //            log that it was successful.
           if (registration.active) {
